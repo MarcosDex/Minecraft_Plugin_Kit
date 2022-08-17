@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'walkeraway'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url='https://hub.spigotmc.org/nexus/content/groups/public/' }
+}
+
+dependencies {
+    implementation 'org.bukkit:bukkit:1.8-R0.1-SNAPSHOT'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
